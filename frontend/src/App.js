@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, Link } from "react-router-dom";
+import "./App.css";
 
 import Login from "./pages/Login";
 import VotingPage from "./pages/VotingPage";
@@ -35,14 +36,14 @@ function App() {
 
   return (
     <Router>
-      <div style={styles.navbar}>
-        <div style={styles.links}>
-          <Link style={styles.link} to="/vote">🗳️ Vote</Link>
-          {!isAdmin && <Link style={styles.link} to="/">🔐 Admin Login</Link>}
-          {isAdmin && <Link style={styles.link} to="/admin">🛠️ Admin Panel</Link>}
+      <div className="navbar">
+        <div className="nav-links">
+          <Link className="nav-link" to="/vote">🗳️ Vote</Link>
+          {!isAdmin && <Link className="nav-link" to="/">🔐 Admin Login</Link>}
+          {isAdmin && <Link className="nav-link" to="/admin">🛠️ Admin Panel</Link>}
         </div>
         {isAdmin && (
-          <button style={styles.logout} onClick={handleLogout}>🔓 Logout</button>
+          <button className="logout-btn" onClick={handleLogout}>🔓 Logout</button>
         )}
       </div>
 
@@ -55,34 +56,5 @@ function App() {
     </Router>
   );
 }
-
-const styles = {
-  navbar: {
-    backgroundColor: "#222",
-    padding: "1rem 2rem",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    color: "#fff",
-  },
-  links: {
-    display: "flex",
-    gap: "1rem",
-  },
-  link: {
-    color: "#fff",
-    textDecoration: "none",
-    fontSize: "1rem",
-  },
-  logout: {
-    backgroundColor: "#e74c3c",
-    color: "#fff",
-    border: "none",
-    padding: "0.5rem 1rem",
-    borderRadius: "4px",
-    cursor: "pointer",
-    fontWeight: "bold",
-  },
-};
 
 export default App;
