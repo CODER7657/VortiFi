@@ -1,0 +1,147 @@
+/* VotingPage.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1f2e, #25252b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 350px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #ff2770;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.login-box h2 {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  text-shadow: 0 0 10px #ff2770;
+}
+
+.login-box input[type="text"] {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #888;
+  font-size: 1rem;
+  background-color: #1a1a2e;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.login-box input[type="text"]:focus {
+  border-color: #45f3ff;
+  outline: none;
+  box-shadow: 0 0 8px #45f3ff;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff2770, #45f3ff);
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.login-box button:hover {
+  box-shadow: 0 0 12px #ff2770, 0 0 25px #45f3ff;
+  transform: scale(1.03);
+}
+
+.error-msg {
+  color: #ff5e5e;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* 🧩 Candidate list styling */
+.candidate-list {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.candidate-option {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.candidate-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.candidate-option input[type="radio"] {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #45f3ff;
+  border-radius: 50%;
+  margin-right: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: transparent;
+}
+
+.candidate-option input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  background-color: #45f3ff;
+  border-radius: 50%;
+}
+
+.candidate-option input[type="radio"]:hover {
+  box-shadow: 0 0 8px #45f3ff, 0 0 16px #45f3ff;
+}
+
+.candidate-option span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

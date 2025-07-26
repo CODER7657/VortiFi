@@ -1,0 +1,136 @@
+.admin-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1f2e, #25252b);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.admin-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px #ff2770;
+  animation: fadeIn 0.6s ease-in-out;
+  color: #fff;
+}
+
+.admin-section h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px #ff2770;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-section input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  border: 1px solid #888;
+  font-size: 1rem;
+  background-color: #1a1a2e;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.admin-section input:focus {
+  border-color: #45f3ff;
+  outline: none;
+  box-shadow: 0 0 8px #45f3ff;
+}
+
+.glow-button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #ff2770, #45f3ff);
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 12px #ff2770, 0 0 25px #45f3ff;
+  transform: scale(1.03);
+}
+
+.delete-btn {
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #dc3545, #ff6f61);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.delete-btn:hover {
+  box-shadow: 0 0 10px #ff4e4e, 0 0 15px #ff4e4e;
+  transform: scale(1.03);
+}
+
+.result-table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.result-table th,
+.result-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.result-table th {
+  background-color: rgba(255, 255, 255, 0.05);
+  text-shadow: 0 0 10px #45f3ff;
+  font-weight: bold;
+}
+
+.result-table tr:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.unauthorized {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1f1f2e, #25252b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
