@@ -11,8 +11,8 @@ const VotingPage = () => {
 
   
   const adminPrivateKey =
-    "0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"; 
-  const provider = new ethers.JsonRpcProvider("http://127.0.0.1:8545");
+    "HERE YOUR ADMIN ACCOUNT PRIVATE KEY"; 
+  const provider = new ethers.JsonRpcProvider("HERE LOCAL IP I HAVE USED HARDHAT LOCAL SEVER THATS WHY");
   const signer = new ethers.Wallet(adminPrivateKey, provider);
 
   useEffect(() => {
