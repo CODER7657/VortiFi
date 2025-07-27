@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import { contractABI, contractAddress } from "../config";
-import "./AdminDashboard.css"; // ✅ Import the styling
+import "./AdminDashboard.css"; 
 
 const AdminDashboard = () => {
   const [candidateName, setCandidateName] = useState("");
