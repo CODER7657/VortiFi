@@ -28,7 +28,6 @@
   <li><a href="#usage">Usage</a></li>
   <li><a href="#security-notes">Security Notes</a></li>
   <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#license">License</a></li>
 </ul>
 
 <hr/>
@@ -122,8 +121,7 @@ npm install
 <h2 id="contributing">Contributing</h2>
 <p>Contributions, issues, and feature requests are welcome. Submit pull requests or open issues.</p>
 
-<h2 id="license">License</h2>
-<p>Specify your license here, e.g., MIT.</p>
+
 
 </body>
 </html>
