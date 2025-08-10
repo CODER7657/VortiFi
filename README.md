@@ -4,59 +4,7 @@
   <meta charset="UTF-8" />
   <title>VortiFi Project Documentation</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      background: #f8f9fa;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #2c3e50;
-    }
-    pre, code {
-      background-color: #eee;
-      padding: 4px 6px;
-      border-radius: 4px;
-      font-family: monospace;
-    }
-    pre {
-      display: block;
-      padding: 10px;
-      overflow-x: auto;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 15px 0;
-    }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 10px;
-      text-align: left;
-    }
-    th {
-      background-color: #f4f4f4;
-    }
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    .note {
-      background: #fff3cd;
-      padding: 10px;
-      border-left: 5px solid #ffeeba;
-      margin: 10px 0;
-    }
-  </style>
+  
 </head>
 <body>
 
